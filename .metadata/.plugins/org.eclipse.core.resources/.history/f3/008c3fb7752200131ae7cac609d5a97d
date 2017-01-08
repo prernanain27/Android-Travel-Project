@@ -1,0 +1,104 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" 
+    android:orientation="vertical"
+    android:background="@drawable/sky"
+    >
+    
+<LinearLayout 
+    android:layout_height="wrap_content"
+    android:layout_width="wrap_content"
+    android:orientation="horizontal">
+    
+    
+    <TextView
+        android:id="@+id/tvusername"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="120dp"
+        android:inputType="text"
+        android:text="username"
+        
+        tools:ignore="NewApi"
+        android:layout_marginLeft="20dp"
+        />
+     <TextView
+        android:id="@+id/tv1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="120dp"
+        android:inputType="text"
+        android:text="*"
+        android:textColor="#ff0000"
+        tools:ignore="NewApi"
+        android:layout_marginLeft="20dp"
+        android:visibility="invisible"
+        />
+    
+    <EditText 
+        android:layout_height="wrap_content"
+        android:layout_width="fill_parent"
+        android:hint="enter username"
+        android:id="@+id/etusername"
+         android:layout_marginTop="120dp"
+        android:layout_marginLeft="10dp"
+      
+        />
+</LinearLayout>
+<LinearLayout 
+    android:layout_height="wrap_content"
+    android:layout_width="wrap_content"
+    android:orientation="horizontal">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="password"
+        android:id="@+id/tvpassword"
+        android:layout_marginTop="20dp"
+       
+        tools:ignore="NewApi" 
+        android:inputType="text"
+        android:layout_marginLeft="20dp"
+      
+        />
+    <TextView
+        android:id="@+id/tv2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="120dp"
+        android:inputType="text"
+        android:text="*"
+   
+        tools:ignore="NewApi"
+        android:layout_marginLeft="20dp"
+        android:visibility="invisible"
+        />
+      <EditText 
+        android:layout_height="wrap_content"
+        android:layout_width="fill_parent"
+        android:hint="enter password"
+        android:id="@+id/etpassword"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="10dp"
+        android:password="true"
+        />
+    </LinearLayout>
+      <ImageView
+        android:id="@+id/imageplane"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginLeft="05dp"
+        android:layout_marginTop="10dp"
+        android:src="@drawable/plane" />
+<Button 
+    android:layout_height="wrap_content"
+    android:layout_width="fill_parent"
+    android:id="@+id/btnlogin"
+    android:text="login"
+    android:textColor="@android:color/background_dark"
+    android:layout_marginTop="30dp"  
+    />
+ 
+
+</LinearLayout>

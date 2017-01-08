@@ -1,0 +1,36 @@
+package com.example.itravel;
+
+import android.os.Bundle;
+import android.app.Activity;
+import android.view.Menu;
+import android.view.View;
+import android.view.View.OnClickListener;
+import android.widget.Button;
+import android.widget.Toast;
+
+public class Calculation extends Activity {
+
+    @Override
+    public void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_calculation);
+        
+        Button oexit=(Button)findViewById(R.id.btnexit);
+        
+        oexit.setOnClickListener(new OnClickListener() {
+			
+			public void onClick(View v) {
+				// TODO Auto-generated method stub
+				
+				Toast.makeText(getApplicationContext(), "thankx for using the app", 2000);
+				System.exit(1);
+			}
+		});
+    }
+
+    @Override
+    public boolean onCreateOptionsMenu(Menu menu) {
+        getMenuInflater().inflate(R.menu.activity_calculation, menu);
+        return true;
+    }
+}

@@ -1,0 +1,40 @@
+package com.example.itravel;
+
+import com.google.android.gms.maps.GoogleMap;
+import com.google.android.gms.maps.GoogleMap.OnMapLongClickListener;
+import com.google.android.gms.maps.MapFragment;
+import com.google.android.gms.maps.model.LatLng;
+
+import android.os.Bundle;
+import android.app.Activity;
+import android.view.Menu;
+
+public class Location extends Activity {
+	GoogleMap gmap;
+    @Override
+    public void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_location);
+        gmap=((MapFragment)getFragmentManager().findFragmentById(R.id.map)).getMap();
+        
+        gmap.setMyLocationEnabled(true);
+        
+        gmap.setOnMapLongClickListener(new OnMapLongClickListener() {
+			
+			@Override
+			public void onMapLongClick(LatLng arg0) {
+				// TODO Auto-generated method stub
+				String latic=Double.toString(gmap.getMyLocation().getLatitude());
+				
+				
+			}
+		});
+        
+    }
+
+    @Override
+    public boolean onCreateOptionsMenu(Menu menu) {
+        getMenuInflater().inflate(R.menu.activity_location, menu);
+        return true;
+    }
+}

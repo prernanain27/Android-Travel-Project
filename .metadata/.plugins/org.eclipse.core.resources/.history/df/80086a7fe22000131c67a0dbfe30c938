@@ -1,0 +1,20 @@
+package com.example.itravel;
+
+import android.os.Bundle;
+import android.app.Activity;
+import android.view.Menu;
+
+public class Login_page extends Activity {
+
+    @Override
+    public void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_login_page);
+    }
+
+    @Override
+    public boolean onCreateOptionsMenu(Menu menu) {
+        getMenuInflater().inflate(R.menu.activity_login_page, menu);
+        return true;
+    }
+}
